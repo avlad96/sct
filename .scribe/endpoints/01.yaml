@@ -1,0 +1,163 @@
+name: Search
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - POST
+    uri: api/v1/organizations/search
+    metadata:
+      groupName: Search
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Поиск организаций по названию'
+      description: 'Найти организации по названию.'
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      X-API-Key: '{YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: b
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanBodyParameters:
+      name: b
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - X-API-Key
+      - 6g43cv8PD1aE5beadkZfhV6
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/v1/organizations/activity
+    metadata:
+      groupName: Search
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Поиск организаций по виду деятельности'
+      description: 'Найти организации, относящиеся к указанному виду деятельности или его дочерним категориям.'
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      X-API-Key: '{YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: b
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanBodyParameters:
+      name: b
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - X-API-Key
+      - 6g43cv8PD1aE5beadkZfhV6
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/v1/buildings/radius
+    metadata:
+      groupName: Search
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Поиск организаций по радиусу'
+      description: 'Найти организации, которые находятся в зданиях в заданном радиусе относительно указанной точки на карте.'
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      X-API-Key: '{YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      lat:
+        name: lat
+        description: ''
+        required: true
+        example: 4326.41688
+        type: number
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      lon:
+        name: lon
+        description: ''
+        required: true
+        example: 4326.41688
+        type: number
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      radius:
+        name: radius
+        description: 'Must be at least 1.'
+        required: false
+        example: 27
+        type: number
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+    cleanBodyParameters:
+      lat: 4326.41688
+      lon: 4326.41688
+      radius: 27
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - X-API-Key
+      - 6g43cv8PD1aE5beadkZfhV6
+    controller: null
+    method: null
+    route: null
+    custom: []

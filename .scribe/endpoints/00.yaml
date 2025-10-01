@@ -1,0 +1,212 @@
+name: Organizations
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/organizations
+    metadata:
+      groupName: Organizations
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Список организаций'
+      description: 'Получить список всех организаций.'
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      X-API-Key: '{YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"error":"Unauthorized"}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - X-API-Key
+      - 6g43cv8PD1aE5beadkZfhV6
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/organizations/{organization_id}'
+    metadata:
+      groupName: Organizations
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Информация об организации'
+      description: 'Получить подробную информацию об организации.'
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      X-API-Key: '{YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      organization_id:
+        name: organization_id
+        description: 'The ID of the organization.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      organization_id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"error":"Unauthorized"}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - X-API-Key
+      - 6g43cv8PD1aE5beadkZfhV6
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/buildings/{building_id}/organizations'
+    metadata:
+      groupName: Organizations
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Список организаций в здании'
+      description: 'Получить список организаций, находящихся в данном здании.'
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      X-API-Key: '{YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      building_id:
+        name: building_id
+        description: 'The ID of the building.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      building_id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"error":"Unauthorized"}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - X-API-Key
+      - 6g43cv8PD1aE5beadkZfhV6
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/activities/{activity_id}/organizations'
+    metadata:
+      groupName: Organizations
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Список организаций по виду деятельности'
+      description: 'Получить список организаций, относящихся к конкретному виду деятельности.'
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      X-API-Key: '{YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      activity_id:
+        name: activity_id
+        description: 'The ID of the activity.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      activity_id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"error":"Unauthorized"}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - X-API-Key
+      - 6g43cv8PD1aE5beadkZfhV6
+    controller: null
+    method: null
+    route: null
+    custom: []
