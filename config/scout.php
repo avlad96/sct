@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Building;
+use App\Models\Organization;
 
 return [
 
@@ -144,6 +145,9 @@ return [
         'index-settings' => [
             Building::class => [
                 'filterableAttributes' => ['_geo'],
+            ],
+            Organization::class => [
+                'searchableAttributes' => ['name'],
             ],
         ],
     ],
