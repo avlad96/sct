@@ -2,11 +2,16 @@
 
 namespace App\Models;
 
+use Database\Factories\OrganizationPhoneFactory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class OrganizationPhone extends Model
 {
+    /** @use HasFactory<OrganizationPhoneFactory> */
+    use HasFactory;
+
     protected $fillable = [
         'organization_id',
         'phone_number',
