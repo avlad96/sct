@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 Route::prefix('v1')->group(function () {
     Route::get('/organizations', [OrganizationController::class, 'index']);
     Route::post('/organizations/search', [OrganizationController::class, 'search']);
+    Route::post('/organizations/activity', [OrganizationController::class, 'searchByActivity']);
     Route::get('/organizations/{organization}', [OrganizationController::class, 'show']);
 
     Route::get('/buildings/{building}/organizations', [BuildingController::class, 'organizations']);

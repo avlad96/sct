@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Activity;
 use App\Models\Building;
 use App\Models\Organization;
 
@@ -147,6 +148,9 @@ return [
                 'filterableAttributes' => ['_geo'],
             ],
             Organization::class => [
+                'searchableAttributes' => ['name'],
+            ],
+            Activity::class => [
                 'searchableAttributes' => ['name'],
             ],
         ],
